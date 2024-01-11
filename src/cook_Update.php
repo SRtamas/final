@@ -23,12 +23,9 @@ $sql = $pdo->query('SELECT * FROM cook');
 foreach($sql as $row){
 
     echo '<tr>';
-    echo '<input type = "checkbox" name = "food">';
-    echo '<td>', $row['cook_id'], '</td>';
+    echo '<td><input type = "checkbox" name = "food" value =', "$row['cook_id']" ,'></td>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
-    echo '<td>';
-    echo '</td>';
     echo '</tr>';
     echo "\n";
 }

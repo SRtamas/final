@@ -31,8 +31,6 @@ foreach($sql as $row){
     echo '<td>', $row['cook_id'], '</td>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
-    echo '<td>';
-    echo '</td>';
     echo '</tr>';
     echo "\n";
 }
