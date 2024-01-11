@@ -9,7 +9,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
-		<title>料理更新/title>
+		<title>料理更新</title>
 	</head>
 	<body>
         <div class="field">
