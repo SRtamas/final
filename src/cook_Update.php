@@ -30,6 +30,7 @@ foreach($sql as $row){
     echo '</tr>';
     echo "\n";
 }
+echo '<input type="submit" value="更新">';
 echo '</form>';
 ?>
 </table>
