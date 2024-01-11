@@ -20,18 +20,17 @@
 <?php
 $pdo = new PDO($connect, USER, PASS);
 $sql = $pdo->query('SELECT * FROM cook');
-echo '<form action="cook_update.php" method="post">';
 foreach($sql as $row){
-
+    echo '<form action="Update.php" method="post">';
     echo '<tr>';
     echo '<td><input type = "radio" name = "food" value ="', $row['cook_id'] ,'">', $row['cook_id'] ,'</td>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
     echo '</tr>';
+    echo '<input type="submit" value="更新">';
+    echo '</form>';
     echo "\n";
 }
-echo '<input type="submit" value="更新">';
-echo '</form>';
 ?>
 </table>
 </div>
