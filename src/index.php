@@ -1,8 +1,8 @@
 
 <?php
     const SERVER = 'mysql220.phy.lolipop.lan';
-    const DBNAME = 'LAA1516810-final';
-    const USER = 'LAA1516810';
+    const DBNAME = 'LAA1516820-final';
+    const USER = 'LAA1516820';
     const PASS = 'Pass0830';
     $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
 ?>
@@ -10,7 +10,6 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/ad(css)/ad-list.css">
     <title>料理管理システム</title>                                 
 </head>
 <body>
