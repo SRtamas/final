@@ -23,7 +23,7 @@ echo '<form action="cook_update.php" method="post">';
 foreach($sql as $row){
 
     echo '<tr>';
-    echo '<td><input type = "checkbox" name = "food" value =', "$row['cook_id']" ,'></td>';
+    echo '<td><input type = "checkbox" name = "food" value =', $row['cook_id'] ,'></td>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
     echo '</tr>';
