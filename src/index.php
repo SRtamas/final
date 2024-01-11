@@ -32,7 +32,7 @@ foreach($sql as $row){
     echo '<tr>';
     echo '<td>', $row['cook_id'], '</td>';
     echo '<td>', $row['cook_mei'], '</td>';
-    echo '<td>', $row['cook_genru'], '</td>';
+    echo '<td>', $row['cook_genre'], '</td>';
     echo '<td>';
     echo '<div class="delete"><a href="cook-Delet.php?id=', $row['cook_id'],'"><button type="button">削除</button></a></div>';
     echo '<div class="update"><a href="cook-update.php?id=', $row['cook_id'],'"><button type="button">更新</button></a></div>';
