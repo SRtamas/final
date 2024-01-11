@@ -16,10 +16,10 @@
     <table>
     <hr>
     <a href="index.php">メニューに戻る</a>
-    <a href="cook_update.php"><button type="button">更新</button></a>
 <?php
 $pdo = new PDO($connect, USER, PASS);
 $sql = $pdo->query('SELECT * FROM cook');
+echo '<form action="cook_update.php" method="post">';
 foreach($sql as $row){
 
     echo '<tr>';
@@ -29,6 +29,7 @@ foreach($sql as $row){
     echo '</tr>';
     echo "\n";
 }
+echo '</form>';
 ?>
 </table>
 </div>
