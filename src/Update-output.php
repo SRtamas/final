@@ -26,11 +26,11 @@
 
     echo '<div class="td1">';
     echo '<td><select name="cook_genre">';
-    echo '<option value="和食">和食</option>'
-    echo '<option value="中華">中華</option>'
-    echo '<option value="洋食">洋食</option>'
-    echo '<option value="イタリア料理">中華</option>'
-    echo '</select></tr>'
+    echo '<option value="和食">和食</option>';
+    echo '<option value="中華">中華</option>';
+    echo '<option value="洋食">洋食</option>';
+    echo '<option value="イタリア料理">中華</option>';
+    echo '</select></tr>';
     echo '</div> ';
     echo '<input type = "submit" value = "更新">';
     echo '</form>'
