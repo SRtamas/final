@@ -25,18 +25,17 @@
 <?php
 $pdo = new PDO($connect, USER, PASS);
 $sql = $pdo->query('SELECT * FROM cook');
-echo '<form action = "Delete-output.php" method = "post">';
 foreach($sql as $row){
 
     echo '<tr>';
-    echo '<td><input type = "checkbox" name = "food" value ="', $row['cook_id'] ,'">', $row['cook_id'], '</td>';
+    echo '<td><input type = "checkbox" name = "cook" value ="', $row['cook_id'] ,'"></td>';
+    echo '<td>', $row['cook_id'], '</td>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
     echo '</tr>';
     echo "\n";
 }
-echo '<input type="submit" value="削除" class="to">';
-echo "</from>";
+echo '<div class="delete"><a href="Delete.php?id=', $row['cook_id'],'"><button type="button">削除</button></a></div>';
 ?>
 </table>
 </div>
