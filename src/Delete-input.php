@@ -16,6 +16,7 @@
     <h1>料理一覧</h1>
     <a href="index.php">メニューに戻る</a>
     <hr>
+    <table>
         <tr>
             <th>料理番号</th>
             <th>料理名</th>
@@ -27,7 +28,7 @@ $sql = $pdo->query('SELECT * FROM cook');
 foreach($sql as $row){
 
     echo '<tr>';
-    echo '<td><input type = "radio" name = "food" value ="', $row['cook_id'] ,'">', $row['cook_id'], '</td>';
+    echo '<td><input type = "checkbox" name = "food" value ="', $row['cook_id'] ,'">', $row['cook_id'], '</td>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
     echo '</tr>';
