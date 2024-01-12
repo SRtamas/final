@@ -8,8 +8,8 @@
 <body>
 <h2>料理管理メニュー</h2>
     <a href="cook_Select.php"><button type="button">一覧</button></a>
-    <a href="cook_Delete.php"><button type="button">削除</button></a>
-    <a href="cook_Insert.php"><button type="button">登録</button></a>
-    <a href="cook_Update.php"><button type="button">更新</button></a>
+    <a href="Delete-input.php"><button type="button">削除</button></a>
+    <a href="Insert-input.php"><button type="button">登録</button></a>
+    <a href="Update-input.php"><button type="button">更新</button></a>
 </body>
 </html>
