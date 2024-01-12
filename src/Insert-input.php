@@ -9,7 +9,7 @@
     <div class="field">
     <a href="index.php">メニューに戻る</a>
     <hr>
-    <form action = "Insert_result.php" method = "post">
+    <form action = "Insert_output.php" method = "post">
         <table>
         <tr><th>料理名</th><th>ジャンル</th></tr>
             <td><input type = "text" name = "cook_mei" required></td>
