@@ -35,8 +35,8 @@ foreach($sql as $row){
     echo '</tr>';
     echo "\n";
 }
-echo '<input type="submit" value="登録" class="to">'
-echo "</from>"
+echo '<input type="submit" value="登録" class="to">';
+echo "</from>";
 ?>
 </table>
 </div>
