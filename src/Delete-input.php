@@ -35,7 +35,6 @@ foreach($sql as $row){
     echo '</tr>';
     echo "\n";
 }
-echo '<div class="delete"><a href="Delete-output.php?id=', $row['cook_id'],'"><button type="button">削除</button></a></div>';
 ?>
 </table>
 </div>
