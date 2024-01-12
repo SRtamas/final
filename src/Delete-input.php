@@ -31,7 +31,7 @@ foreach($sql as $row){
     echo '<td>', $row['cook_id'], '</td>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
-    echo '<div class="delete"><a href="Delete-output.php?id=', $row['cook_id'],'"><button type="button">削除</button></a></div>';
+    echo '<td><div class="delete"><a href="Delete-output.php?id=', $row['cook_id'],'"><button type="button">削除</button></a></td></div>';
     echo '</tr>';
     echo "\n";
 }
