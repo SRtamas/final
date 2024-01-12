@@ -13,7 +13,7 @@
         <table>
         <tr><th>料理名</th><th>ジャンル</th></tr>
             <td><input type = "text" name = "cook_mei" required></td>
-            <td><input type = "text" name = "cook_genru" required></td></tr>
+            <td><input type = "text" name = "cook_genre" required></td></tr>
         </table>
     <input type="submit" value="登録" class="to">
     </form>

@@ -25,7 +25,7 @@
     echo '</div> ';
 
     echo '<div class="td1">';
-    echo '<td><input type="text" name="cook_genru" value="',$_POST['cook_genru'],'"required></td>';
+    echo '<td><input type="text" name="cook_genru" value="',$_POST['cook_genre'],'"required></td>';
     echo '</div> ';
 ?>
 </body>

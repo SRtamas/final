@@ -18,11 +18,11 @@
     <?php
     //insertで追加
         $pdo = new PDO($connect, USER, PASS);
-        $sql = $pdo->prepare('insert into cook(cook_mei, cook_genru) values (?, ?)');
-        $sql->execute([$_POST['cook_mei'], $_POST['cook_genru']]);
+        $sql = $pdo->prepare('insert into cook(cook_mei, cook_genre) values (?, ?)');
+        $sql->execute([$_POST['cook_mei'], $_POST['cook_genre']]);
         if(empty($_POST['cook_mei'])){
             echo '料理名を入力してください。';
-        } else if(empty($_POST['cook_genru'])){
+        } else if(empty($_POST['cook_genre'])){
             echo 'ジャンルを入力してください。';
         } else {
             
