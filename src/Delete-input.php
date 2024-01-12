@@ -25,7 +25,7 @@
 <?php
 $pdo = new PDO($connect, USER, PASS);
 $sql = $pdo->query('SELECT * FROM cook');
-<form action = "Delete_output.php" method = "post">
+echo '<form action = "Delete_output.php" method = "post">';
 foreach($sql as $row){
 
     echo '<tr>';
