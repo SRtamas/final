@@ -28,10 +28,10 @@ $sql = $pdo->query('SELECT * FROM cook');
 foreach($sql as $row){
 
     echo '<tr>';
-    echo '<td><input type = "checkbox" name = "cook" value ="', $row['cook_id'] ,'"></td>';
     echo '<td>', $row['cook_id'], '</td>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
+    echo '<div class="delete"><a href="Delete-output.php?id=', $row['cook_id'],'"><button type="button">削除</button></a></div>';
     echo '</tr>';
     echo "\n";
 }
