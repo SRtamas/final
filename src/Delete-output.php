@@ -16,7 +16,7 @@
     <hr>
 <?php
     $pdo=new PDO($connect, USER, PASS);
-    $cookId = $_POST['cook_id'];
+    $cookId = $_POST['id'];
     $sql=$pdo->prepare('delete from cook where cook_id=?');
     $sql->execute([$cookId]);
 
