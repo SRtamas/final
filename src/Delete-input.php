@@ -25,7 +25,7 @@
 <?php
 $pdo = new PDO($connect, USER, PASS);
 $sql = $pdo->query('SELECT * FROM cook');
-echo '<form action = "Delete_output.php" method = "post">';
+echo '<form action = "Delete-output.php" method = "post">';
 foreach($sql as $row){
 
     echo '<tr>';
@@ -35,7 +35,7 @@ foreach($sql as $row){
     echo '</tr>';
     echo "\n";
 }
-echo '<input type="submit" value="登録" class="to">';
+echo '<input type="submit" value="削除" class="to">';
 echo "</from>";
 ?>
 </table>
