@@ -19,19 +19,18 @@
     foreach($sql as $row){
 
     echo '<form action="Update-result.php">';
-    echo '<input type="hidden" name="cook_id" value="',$row['cook_id'],'required">';
+    echo '<input type="hidden" name="cook_id" value="',$row['cook_id'],'">';
     echo '<table>';
     echo '<tr><th>料理名</th><th>ジャンル</th></tr>';
     echo '<tr>';
-    echo '<div class="td1">';
     echo '<td><input type="text" name="cook_mei" value="',$row['cook_mei'],'"></td>';
     echo '<td><select name="cook_genre">';
     echo '<option value="和食">和食</option>';
     echo '<option value="中華">中華</option>';
     echo '<option value="洋食">洋食</option>';
     echo '<option value="イタリア料理">イタリア料理</option>';
-    echo '</select></tr>';
-    echo '</div>';
+    echo '</select></td></tr>';
+    echo '</table>';
     echo '<input type = "submit" value = "更新">';
     echo '</form>';
     }
