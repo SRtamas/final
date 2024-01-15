@@ -18,7 +18,7 @@
     $sql->execute([$_GET['id']]);
     foreach($sql as $row){
 
-    echo '<form action="Update-result.php">';
+    echo '<form action="Update-result.php?id =, $row['id'], ">';
     echo '<input type="hidden" name="cook_id" value="',$row['cook_id'],'required">';
     echo '<table>';
     echo '<tr><th>料理名</th><th>ジャンル</th></tr>';
