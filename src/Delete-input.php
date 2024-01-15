@@ -26,7 +26,7 @@ $pdo = new PDO($connect, USER, PASS);
 $sql = $pdo->query('SELECT * FROM cook');
 foreach($sql as $row){
 
-    echo '<input type = "hidden" name = "', $row['cook_id'] ,'"';
+    echo '<input type = "hidden" name = "', $row['cook_id'] ,'">';
     echo '<tr>';
     echo '<td>', $row['cook_mei'], '</td>';
     echo '<td>', $row['cook_genre'], '</td>';
