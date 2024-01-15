@@ -17,7 +17,7 @@
 <?php
     $pdo=new PDO($connect, USER, PASS);
     $cookId = $_GET['id'];
-    $sql=$pdo->prepare('update cook where set cook_mei=?,cook_genre=? where cook_id=?');
+    $sql=$pdo->prepare('update cook set cook_mei=?,cook_genre=? where cook_id=?');
     if($sql->execute([htmlspecialchars($_POST['cook_id']),$_POST['cook_mei'],$_POST['cook_genre'],$_GET['id']])){
                 echo '<h1>更新に成功しました。</h1>';
             }else{
