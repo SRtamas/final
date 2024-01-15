@@ -33,7 +33,7 @@
     echo '</select></tr>';
     echo '</div>';
     echo '<input type = "submit" value = "更新">';
-    echo '</form>'
+    echo '</form>';
     }
 ?>
 </body>
