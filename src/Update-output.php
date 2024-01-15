@@ -15,7 +15,7 @@
 <?php
     $pdo=new PDO($connect, USER, PASS);
     echo '<form action="Upadate-result.php">';
-    echo '<input type="hidden" name="cook_id" value="',$row['cook_id'],'required">';
+    echo '<input type="hidden" name="cook_id" value="',$_POST['cook_id'],'required">';
     echo '<table>';
     echo '<tr><th>料理名</th><th>ジャンル</th></tr>';
     echo '<tr>';
