@@ -20,7 +20,7 @@
     echo '<tr><th>料理名</th><th>ジャンル</th></tr>';
     echo '<tr>';
     echo '<div class="td1">';
-    echo '<td><input type="text" name="', $row['cook_mei'] ,'" value="',$row['cook_mei'],'required "></td>';
+    echo '<td><input type="text" name="', $_POST['cook_mei'] ,'" value="',$row['cook_mei'],'required "></td>';
     echo '<td><select name="', $_POST['cook_genre'],'">';
     echo '<option value="和食">和食</option>';
     echo '<option value="中華">中華</option>';
