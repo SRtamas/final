@@ -3,10 +3,10 @@ h2 {
 }
 
 a {
-    display: inline-block; 
-    margin: 20px; 
-    padding: 10px;
+    display: inline-block;
     text-align: center;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding as needed */
 }
 
 body {
