@@ -2,11 +2,12 @@ h2 {
     text-align: center;
 }
 
-bytoon {
+a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
     padding: 40px;
+    margin-left: 50px;
 }
 
 body {
