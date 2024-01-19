@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/ad(css)/ad-registration.css">
+    <link rel="stylesheet" href="../css/genre-input.css">
     <title>追加</title>
 </head>
 <body>

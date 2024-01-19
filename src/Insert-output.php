@@ -10,11 +10,13 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <a href="index.php">メニューに戻る</a>
-    <hr>
+    <link rel="stylesheet" href="../css/insert-output.css">
     <title>登録完了</title>
 </head>
 <body>
+    <a href="index.php">メニューに戻る</a>
+    <hr>
+
     <?php
     //insertで追加
         $pdo = new PDO($connect, USER, PASS);

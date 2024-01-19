@@ -9,6 +9,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/cook_Select.css">
     <title>料理管理システム</title>                                 
 </head>
 <body>

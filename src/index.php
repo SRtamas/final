@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>料理</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
 <h2>料理管理メニュー</h2>

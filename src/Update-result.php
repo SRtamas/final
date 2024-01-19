@@ -9,6 +9,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/Update-result.css">
 		<title>更新完了</title>
 	</head>
 	<body>

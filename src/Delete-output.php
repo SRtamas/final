@@ -9,6 +9,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/Delete-output.css">
 		<title>削除完了</title>
 	</head>
 	<body>

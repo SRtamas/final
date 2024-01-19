@@ -9,9 +9,12 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Update-output.css">
     <title>更新</title>
 </head>
 <body>
+    <a href="index.php">メニューに戻る</a>
+    <hr>
 <?php
     $pdo=new PDO($connect, USER, PASS);
     $Cooksql = $pdo->prepare('select * from Cook where cook_id = ?');

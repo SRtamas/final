@@ -10,11 +10,12 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/ad(css)/ad-registration.css">
+    <link rel="stylesheet" href="../css/insert-input.css">
     <title>登録</title>
 </head>
 <body>
     <div class="field">
+    <h1>新規登録</h1>
     <a href="index.php">メニューに戻る</a>
     <hr>
     <form action = "Insert-output.php" method = "post">

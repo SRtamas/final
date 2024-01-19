@@ -9,6 +9,8 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Delete-input.css">
+
     <title>削除</title>                                 
 </head>
 <body>
