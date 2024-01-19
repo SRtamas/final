@@ -4,6 +4,7 @@ h2{
 a{
     text-align: center;
     margin: auto;
+    padding: auto;
 }
 body{
     background-color: skyblue;
