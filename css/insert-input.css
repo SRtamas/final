@@ -1,10 +1,10 @@
 body {
-    background-color: #cecece;
+    background-color: #f4f4f4;
 }
 h1 {
     text-align: center;
-    color: #333;
 }
+
 
 a {
     display: block;
@@ -13,8 +13,9 @@ a {
     text-decoration: none;
 }
 
-hr {
-    border: 1px solid #ddd;
+
+form {
+    text-align: center;
 }
 
 table {
@@ -22,13 +23,8 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
 }
-
 th, td {
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
-th {
-    background-color: #3498db;
-    color: #fff;
-}
