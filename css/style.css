@@ -1,11 +1,13 @@
-h2{
+h2 {
     text-align: center;
 }
-a{
-    text-align: center;
+
+a {
+    display: block;
     margin: auto;
-    padding: auto;
+    text-align: center;
 }
-body{
+
+body {
     background-color: skyblue;
 }
