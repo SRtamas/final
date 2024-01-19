@@ -13,6 +13,7 @@
     <title>更新</title>
 </head>
 <body>
+    <h1>料理更新</h1>
     <a href="index.php">メニューに戻る</a>
     <hr>
 <?php
