@@ -3,9 +3,11 @@ h2 {
 }
 
 a {
-    display: block; /* Ensure the link is a block-level element */
-    margin: auto;
+    display: block;
+    margin: 20px auto; /* Adjust the margin value as needed */
     text-align: center;
+    text-decoration: none; /* Remove underlines from links */
+    color: black; /* Set the text color */
 }
 
 body {
