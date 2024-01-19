@@ -1,0 +1,35 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+a {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
