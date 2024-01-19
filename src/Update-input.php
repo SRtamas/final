@@ -9,7 +9,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/Update-intput.css">
+        <link rel="stylesheet" href="../css/Update-input.css">
 		<title>料理更新</title>
 	</head>
 	<body>
