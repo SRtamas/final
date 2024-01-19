@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="list_field">
-    <h1>料理一覧</h1>
+    <h1>料理削除</h1>
     <a href="index.php">メニューに戻る</a>
     <hr>
     <table  align="center" border="1">
