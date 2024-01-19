@@ -18,16 +18,24 @@
     <?php
     //insertで追加
         $pdo = new PDO($connect, USER, PASS);
-        $sql = $pdo->prepare('insert into cook(cook_mei, cook_genre) values (?, ?)');
-        $sql->execute([$_POST['cook_mei'], $_POST['cook_genre']]);
-        if(empty($_POST['cook_mei'])){
-            echo '料理名を入力してください。';
-        } else if(empty($_POST['cook_genre'])){
-            echo 'ジャンルを入力してください。';
-        } else {
-            
-            echo '<h1>登録が完了しました。</h1>';
+        $sql = $pdo->prepare('insert into Making values (null,?,?)');
+        $sql->execute([$_POST['cook_make'], $_POST['cook_mate']]);
+
+        $Makingsql = $pdo->prepare('select * from Making where cook_mate = ?');
+        $Makingsql->execute([$_POST['cook_mate']]);
+
+        foreach($Makingsql as $row){
+            $makingId = $row['making_id'];
         }
+
+        $Genresql = $pdo->prepare('select * from Genre where genre_mei = ?');
+        $Genresql->execute([$_POST['genre_mei']]);  
+            
+        foreach($Genresql as $row2){
+            $Cooksql = $pdo->prepare('insert into Cook(making_id,cook_mei,genre_id) values (?, ? , ?)');
+            $Cooksql->execute([$makingId,$_POST['cook_mei'],$row2['genre_id']]);    
+        }
+        echo '<h1>登録が完了しました。</h1>';
     ?>
 </body>
 </html>

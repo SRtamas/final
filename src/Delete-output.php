@@ -17,8 +17,12 @@
 <?php
     $pdo=new PDO($connect, USER, PASS);
     $cookId = $_GET['id'];
-    $sql=$pdo->prepare('delete from cook where cook_id=?');
-    $sql->execute([$cookId]);
+    //$MakingId = $_GET['id2'];
+    $Cooksql=$pdo->prepare('delete from Cook where making_id=?');
+    $Cooksql->execute([$cookId]);
+
+    $Makingsql=$pdo->prepare('delete from Making where making_id=?');
+    $Makingsql->execute([$cookId]);
 
     echo '<h1>削除が完了しました。</h1>'; 
 ?>

@@ -19,18 +19,32 @@
     <table align="center" border="1">
         <tr>
             <th>料理番号</th>
+            <th>レシピ番号</th>
             <th>料理名</th>
+            <th>レシピ</th>
+            <th>材料</th>
             <th>ジャンル</th>
         </tr>
 <?php
 $pdo = new PDO($connect, USER, PASS);
-$sql = $pdo->query('SELECT * FROM cook');
+$sql = $pdo->query('select * from Cook');
 foreach($sql as $row){
-
     echo '<tr>';
     echo '<td>', $row['cook_id'], '</td>';
     echo '<td>', $row['cook_mei'], '</td>';
-    echo '<td>', $row['cook_genre'], '</td>';
+    echo '<td>', $row['making_id'], '</td>';
+    $sql2=$pdo->prepare('select * from Making where making_id=?');
+    $sql2->execute([$row['making_id']]);
+    foreach($sql2 as $row2){
+
+        echo '<td>', $row2['cook_make'], '</td>';
+        echo '<td>', $row2['cook_mate'], '</td>';
+    }
+    $sql3 = $pdo->prepare('select * from Genre where genre_id=?');
+    $sql3->execute([$row['genre_id']]);
+    foreach($sql3 as $row3){
+        echo '<td>', $row3['genre_mei'], '</td>';
+    }
     echo '</tr>';
     echo "\n";
 }

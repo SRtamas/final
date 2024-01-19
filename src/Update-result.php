@@ -16,8 +16,16 @@
     <hr>
 <?php
     $pdo=new PDO($connect, USER, PASS);
-    $sql=$pdo->prepare('update cook set cook_mei=?,cook_genre=? where cook_id=?');
-    $sql->execute([$_POST['cook_mei'],$_POST['cook_genre'],$_POST['cook_id']]);
+    $Makingsql=$pdo->prepare('update Making set cook_make=?,cook_mate=? where making_id=?');
+    $Makingsql->execute([$_POST['cook_make'],$_POST['cook_mate'],$_POST['making_id']]);
+
+    $sql = $pdo->prepare('select * from Genre where genre_mei=?'); 
+    $sql->execute([$_POST['genre_mei']]);
+    foreach($sql as $row){
+        $Cooksql=$pdo->prepare('update Cook set cook_mei=?,genre_id=? where cook_id=?');
+        $Cooksql->execute([$_POST['cook_mei'],$row['genre_id'],$_POST['cook_id']]);
+    }
     echo '<h1>更新に成功しました。</h1>';
+
     ?>
 </html>

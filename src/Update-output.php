@@ -14,25 +14,36 @@
 <body>
 <?php
     $pdo=new PDO($connect, USER, PASS);
-    $sql = $pdo->prepare('select * from cook where cook_id = ?');
-    $sql->execute([$_GET['id']]);
-    foreach($sql as $row){
+    $Cooksql = $pdo->prepare('select * from Cook where cook_id = ?');
+    $Cooksql->execute([$_GET['id']]);
+    foreach($Cooksql as $row){
 
-    echo '<form action="Update-result.php" method="post">';
-    echo '<input type="hidden" name="cook_id" value="',$row['cook_id'],'">';
-    echo '<table>';
-    echo '<tr><th>料理名</th><th>ジャンル</th></tr>';
-    echo '<tr>';
-    echo '<td><input type="text" name="cook_mei" value="',$row['cook_mei'],'"></td>';
-    echo '<td><select name="cook_genre">';
-    echo '<option value="和食">和食</option>';
-    echo '<option value="中華">中華</option>';
-    echo '<option value="洋食">洋食</option>';
-    echo '<option value="イタリア料理">イタリア料理</option>';
-    echo '</select></td></tr>';
-    echo '</table>';
-    echo '<input type = "submit" value = "更新">';
-    echo '</form>';
+        $Makingsql = $pdo->prepare('select * from Making where making_id = ?');
+        $Makingsql->execute([$_GET['id']]);
+        foreach($Makingsql as $row1){
+    
+
+        echo '<form action="Update-result.php" method="post">';
+        echo '<input type="hidden" name="cook_id" value="',$row['cook_id'],'"required>';
+        echo '<input type="hidden" name="making_id" value="',$row['making_id'],'"required>';
+
+        echo '<table>';
+        echo '<tr><th>料理名</th><th>レシピ</th><th>材料</th><th>ジャンル</th></tr>';
+        echo '<tr>';
+        echo '<td><input type="text" name="cook_mei" value="',$row['cook_mei'],'"required></td>';
+        echo '<td><textarea name = "cook_make" required>', $row1["cook_make"], ' </textarea></td>';
+        echo '<td><textarea name = "cook_mate" required>', $row1["cook_mate"], ' </textarea></td>';
+        echo '<td><select name="genre_mei">';
+        $Genresql = $pdo->query('select * from Genre');
+        foreach($Genresql as $row2){
+            echo '<option value = ', $row2['genre_mei'] ,'>', $row2['genre_mei'] ,'</option>';
+        }
+        echo '</select></td>';
+        echo '</tr>';
+        echo '</table>';
+        echo '<input type = "submit" value = "更新">';
+        echo '</form>';
+        }
     }
 ?>
 </body>
