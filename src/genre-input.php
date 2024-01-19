@@ -10,7 +10,7 @@
     <a href="index.php">メニューに戻る</a>
     <hr>
     <form action = "genre-output.php" method = "post">
-        ジャンル:<input type = "text" name = "genre" require>
+        ジャンル:<input type = "text" name = "genre" required>
     <input type="submit" value="追加" class="to">
     </form>
     </div>
