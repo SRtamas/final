@@ -1,3 +1,6 @@
+body {
+    background-color: #f4f4f43f;
+}
 h2 {
     text-align: center;
 }
@@ -8,8 +11,4 @@ a {
     text-align: center;
     text-decoration: none; /* Remove underlines from links */
     color: black; /* Set the text color */
-}
-
-body {
-    background-color: #f0f0f0;
 }
